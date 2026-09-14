@@ -1,19 +1,18 @@
-HALVMARATON 2026 - WEB-APP
+VERSJON 3
 
-Filer:
-- index.html: selve appen
-- manifest.webmanifest: gjør nettsiden installerbar
-- sw.js: gir støtte for bruk uten nett
-- icon.svg: appikon
+Nytt:
+- Registrer faktisk løpt distanse i kilometer, også når den avviker fra planen.
+- Faktisk tid, opplevd belastning og kommentar på maks 160 tegn er beholdt.
+- Kilometerstatistikk for aktuell programuke.
+- Total faktisk distanse sammenlignet med opprinnelig plan.
+- Planintervaller vises som intervall, for eksempel 17–18 km.
 
-RASK TEST PÅ PC
-Dobbeltklikk index.html. Avkrysning og notater fungerer med en gang.
+OPPDATER GITHUB PAGES
+1. Pakk ut ZIP-filen.
+2. Åpne repositoryet på GitHub.
+3. Velg Add file og Upload files.
+4. Erstatt index.html, manifest.webmanifest, sw.js og icon.svg.
+5. Velg Commit changes.
+6. Vent 1–3 minutter og last siden på nytt.
 
-PUBLISERING
-Last opp alle fire filene til samme rotmappe hos en HTTPS-webvert, for eksempel GitHub Pages, Netlify eller Cloudflare Pages. Service worker og installasjon krever normalt HTTPS.
-
-INSTALLASJON PÅ IPHONE
-Åpne den publiserte siden i Safari, trykk Del, velg Legg til på Hjem-skjerm og trykk Legg til.
-
-DATA
-Avkrysninger og notater lagres lokalt på enheten. Bruk Eksporter sikkerhetskopi i appen ved behov.
+Data fra versjon 1 og 2 forsøkes beholdt automatisk når nettadressen og nettleserdataene er de samme. Tidligere utførte økter vil ikke ha faktisk distanse før du redigerer dem.
